@@ -7,8 +7,12 @@ const { app, BrowserWindow } = electron;
 let mainWindow;
 
 app.on("ready", () => {
-  mainWindow = new BrowserWindow();
-
+  mainWindow = new BrowserWindow({
+    width: 1200,
+    height: 800,
+    fullscreen: true
+  });
+  mainWindow.setFullScreen(true);
   mainWindow.loadURL(
     url.format({
       pathname: path.join(__dirname, "UI/root.html"),
@@ -19,5 +23,4 @@ app.on("ready", () => {
   mainWindow.on("close", () => {
     app.quit();
   });
-
 });

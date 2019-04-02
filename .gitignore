@@ -193,3 +193,8 @@ package-lock.json
 
 ## Vs code
 .vscode
+
+## temp files
+UI/scripts/temp.js
+UI/temp.css
+UI/temp.html

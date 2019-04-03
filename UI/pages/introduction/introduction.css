@@ -1,0 +1,11 @@
+.textarea{
+  border: 5px solid rgb(160, 142, 62);
+  border-radius: 10px;
+  height: 500px;
+}
+
+.svg-container{
+  border: 5px solid rgb(70, 160, 62);
+  border-radius: 10px;
+  height: 500px;
+}

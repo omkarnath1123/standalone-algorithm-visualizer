@@ -76,6 +76,15 @@ map.canvas.draw = function() {
   map.canvas.fill();
 };
 
+function getRandomColor() {
+  var letters = "0123456789ABCDEF";
+  var color = "#";
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
 map.svg.draw = function() {
   circle = map.svg
     .selectAll("circle")
@@ -85,7 +94,7 @@ map.svg.draw = function() {
     .attr("r", function(d) {
       return d.r;
     })
-    .attr("fill", "blue")
+    .attr("fill", getRandomColor)
     .attr("transform", map.svg.transform);
 };
 

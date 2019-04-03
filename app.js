@@ -15,7 +15,7 @@ app.on("ready", () => {
   mainWindow.setFullScreen(true);
   mainWindow.loadURL(
     url.format({
-      pathname: path.join(__dirname, "UI/root.html"),
+      pathname: path.join(__dirname, "UI/pages/introduction/introduction.html"),
       protocol: "file",
       slashes: true
     })

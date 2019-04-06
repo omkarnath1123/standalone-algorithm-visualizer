@@ -1,0 +1,22 @@
+{
+  "nodes": [
+    { "id": "v0", "group": "vertex-0" },
+    { "id": "v1", "group": "vertex-1" },
+    { "id": "v2", "group": "vertex-2" },
+    { "id": "v3", "group": "vertex-3" },
+    { "id": "v4", "group": "vertex-4" },
+    { "id": "v5", "group": "vertex-5" }
+  ],
+  "links1": [
+    { "id": "e0", "source": "v0", "target": "v1" },
+    { "id": "e1", "source": "v0", "target": "v5" },
+    { "id": "e2", "source": "v5", "target": "v4" },
+    { "id": "e3", "source": "v1", "target": "v2" },
+    { "id": "e4", "source": "v1", "target": "v4" },
+    { "id": "e5", "source": "v4", "target": "v3" },
+    { "id": "e6", "source": "v2", "target": "v3" },
+    { "id": "e7", "source": "v5", "target": "v1" },
+    { "id": "e8", "source": "v4", "target": "v2" },
+    { "id": "e9", "source": "v1", "target": "v4" }
+  ]
+}

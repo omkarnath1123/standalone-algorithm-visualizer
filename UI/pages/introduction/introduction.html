@@ -10,18 +10,117 @@
         module = undefined;
       }
     </script>
-    <script src="../../../lib/d3v4.js"></script>
-    <script src="../../../lib/jQuery.js"></script>
-    <script src="../../../lib/MathJax.js"></script>
-    <script src="../../../lib/bootstrap.js"></script>
-    <script src="./introduction.js"></script>
+    <script type="text/javascript" src="../../../lib/d3v4.js"></script>
+    <script type="text/javascript" src="../../../lib/jQuery.js"></script>
+    <!-- <script type="text/javascript" src="../../../lib/popper.js"></script> -->
+    <script type="text/javascript" src="../../../lib/bootstrap.js"></script>
+    <script type="text/javascript" src="./introduction.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
+    ></script>
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-lg-6 textarea"></div>
-        <div class="col-md-6 col-lg-6 svg-container">
-          <svg width="100%" height="100%"></svg>
+        <div class="col-md-12 col-lg-12 col-xl-12 textarea">
+          <div class="page-heading">Graph theory</div>
+          <hr />
+
+          <p>
+            A linear `graph` ( or simply a `graph` ) `G = (V, E)` consists of a
+            set of objects `V = {v_1, v_2, ...}` called vertices, and another
+            set `E = \{e_1, e_2, ... \}`, whose elements are called edges, such
+            that the edge `e_k` is identified with an unordered pair `(v_i,
+            v_j)` of vertices.
+          </p>
+          $$ G = (V, E) $$ $$ V = non\ empty\ set\ of\ vertices$$ $$ E = set\
+          of\ vertices\ e \in E$$ $$ is\ associated\ with\ unordered\ pair\ of\
+          vertices\ (v_i, v_j) $$
+
+          <div class="row">
+            <div class="col-md-1 col-lg-1 col-xl-1"></div>
+            <div class="col-md-9 col-lg-9 col-xl-9 remember">
+              <span class="note">Note :</span> The `degree` (or valency) of a
+              vertex of a graph is the number of edges incident to the vertex,
+              and in a multigraph, loops are counted twice.
+            </div>
+            <div class="col-md-1 col-lg-1 col-xl-1"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-1 col-lg-1 col-xl-1"></div>
+            <div class="col-md-9 col-lg-9 col-xl-9 theorem">
+              <span class="theorem-text">Theorem :</span> The total degree of
+              graph will always the twice of number of edges while counting self
+              loop twice. $$ \sum\nolimits_{i=1}^n d(v_i) = 2e$$ i.e : for the
+              below graph <br />
+              `=\ d(v_1) + d(v_2) + d(v_3)+ d(v_4)+ d(v_5)+ d(v_6)`<br />
+              `=\ 2 + 4 + 3 + 2 + 4 + 3 `<br />
+              `=\ 18 =\ 2e\ {e = 9}`
+            </div>
+            <div class="col-md-1 col-lg-1 col-xl-1"></div>
+          </div>
+
+          <div class="row inner-padding">
+            <div class="col-md-3 col-lg-3 col-xl-3"></div>
+            <div class="col-md-6 col-lg-6 col-xl-6 svg-container">
+              <svg width="100%" height="100%"></svg>
+            </div>
+            <div class="col-md-3 col-lg-3 col-xl-3"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-1 col-lg-1 col-xl-1"></div>
+            <div class="col-md-9 col-lg-9 col-xl-9 theorem">
+              <span class="theorem-text">Theorem :</span> The number of vertices
+              of odd degree in a graph is always even. $$ \sum\nolimits_{i=1}^n
+              d(v_i) = \sum\nolimits_{even} d(v_j) + \sum\nolimits_{odd}
+              d(v_k)$$ $$ 2e\ = \sum\nolimits_{even} d(v_j) +
+              \sum\nolimits_{odd} d(v_k)$$ $$ an\ even\ number\ =
+              \sum\nolimits_{odd} d(v_k)$$
+            </div>
+            <div class="col-md-1 col-lg-1 col-xl-1"></div>
+          </div>
+
+          <br />
+          <ul>
+            <li>
+              A edge with end vertices same is called as <code>self loop</code>.
+            </li>
+            <li>
+              If `G = \emptyset\ &\ V \ne\ \emptyset` then the graph is called
+              <code>vertex graph</code>.
+            </li>
+            <li>
+              Two edges with the same end points are called
+              <code>parallel edges</code>.
+            </li>
+            <li>
+              A vertex having no incident edge is called an
+              <code>isolated vertex</code>.
+            </li>
+            <li>
+              A vertex with degree one is called a
+              <code>pendent vertex</code> or <code>end vertex</code>.
+            </li>
+            <li>
+              A graph with no self loop and parallel edges is called
+              <code>simple graph</code>.
+            </li>
+            <li>
+              A graph without self loop but parallel edges is called
+              <code>multi graph</code>.
+            </li>
+            <li>
+              A graph in which self loop & parallel edges both are allowed is
+              known as <code>psuedograph</code>.
+            </li>
+            <li>
+              A graph is <code>finite</code> if it has finite set of vertices of
+              edges otherwise <code>infinite</code>.
+            </li>
+          </ul>
         </div>
       </div>
     </div>

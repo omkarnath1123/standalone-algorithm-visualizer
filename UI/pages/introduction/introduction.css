@@ -132,3 +132,7 @@
   font-weight: 200%;
   color: rgb(17, 155, 5);
 }
+
+.navbar-nav{
+  text-align: right;
+}

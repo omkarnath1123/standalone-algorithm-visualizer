@@ -1,0 +1,67 @@
+.svg-container {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+}
+
+.link {
+  stroke: rgb(209, 202, 202);
+  stroke-width: 1px;
+}
+
+.floating-text {
+  /* background-color: rgb(68, 68, 68); */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: table;
+  /* opacity: 0; */
+}
+
+.title {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 200%;
+  color: rgb(243, 243, 243);
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.sub-heading {
+  font-size: 100%;
+  text-transform: none;
+}
+
+body {
+  background-image: url("../../images/firewatch.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+span {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  border: 3px solid white;
+  border-radius: 7px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 70%;
+  padding: 5px 10px 5px 10px;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}

@@ -2,6 +2,12 @@
 
 [![trello](UI/images/trello.png)](https://trello.com/b/Ac41C6HN/standalone-algorithm-visualizer)
 
+## Builds
+
+[![MacOS-Build](images/MacOS.png)](https://github.com/omkarnath1123/standalone-algorithm-visualizer/releases/download/1.1.0/Algorithm-Visualizer-darwin-x64.zip)
+[![Windows64-Build](images/windows64.png)](https://github.com/omkarnath1123/standalone-algorithm-visualizer/releases/download/1.1.0/Algorithm-Visualizer-win32-x64.zip)
+[![Ubuntu-Build](images/ubuntu.png)](https://github.com/omkarnath1123/standalone-algorithm-visualizer/releases/download/1.1.0/Algorithm-Visualizer-linux-x64.zip)
+
 > `The power of the unaided mind is highly overrated… The real powers come from devising external aids that enhance cognitive abilities.`- [Donald Norman](https://jnd.org/things-that-make-us-smart-defending-human-attributes-in-the-age-of-the-machine/)
 
 **Standalone Algorithm Visualizer** is the standalone app which is build for `Mac`, `Windows` and `Linux OS` and is build on `Javascript` and [electron](https://github.com/electron/electron) And yes it is an open-source and will always be. It gives you a playground to learn while you play with algorithm and its theory. It makes mathematical expression and theorm easy to understand.

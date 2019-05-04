@@ -1,0 +1,17 @@
+body {
+  text-align: center;
+  font: 100px;
+}
+
+img {
+  width: 30%;
+}
+
+.text {
+  text-decoration: gray;
+  font-family: Courier;
+}
+
+span {
+  font-weight: bold;
+}

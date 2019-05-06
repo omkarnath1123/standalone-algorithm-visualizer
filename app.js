@@ -7,15 +7,20 @@ let mainWindow;
 let BASE_PAGE = "UI/pages/home/home.html";
 
 app.on("ready", async () => {
-  await new Promise(function(resolve, reject) {
-    require("dns").resolve("www.google.com", function(err) {
-      if (err) {
-        BASE_PAGE = "UI/pages/offline/offline.html";
-      } else {
-        BASE_PAGE = "UI/pages/home/home.html";
-      }
+  await new Promise(function (resolve, reject) {
+    require("dns")
+      .resolve("www.google.com", function (err) {
+        if (err) {
+          BASE_PAGE = "UI/pages/offline/offline.html";
+        } else {
+          BASE_PAGE = "UI/pages/home/home.html";
+        }
+        resolve();
+      });
+    setTimeout(() => {
+      BASE_PAGE = "UI/pages/offline/offline.html";
       resolve();
-    });
+    }, 5000);
   });
 
   mainWindow = new BrowserWindow({
